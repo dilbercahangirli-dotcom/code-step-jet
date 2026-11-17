@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStepJet | IT Elanları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#" class="logo">CodeStep<span>Jet</span></a>
+
+    <nav>
+        <a href="#home">Ana səhifə</a>
+        <a href="#ads">Bütün elanlar</a>
+        <a href="#courses">Kurslar</a>
+        <a href="#trainings">Təlimlər</a>
+        <a href="#events">Tədbirlər</a>
+    </nav>
+
+    <a class="post-btn" href="https://t.me/elan_yerlesdirme_bot">
+        + Elan yerləşdir
+    </a>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">🚀 Gələcəyin texnologiyası burada başlayır</span>
+        <h1>İT dünyasına<br> <span>bir addım</span> yaxınlaş!</h1>
+        <p>
+            Proqramlaşdırma, süni intellekt, dizayn və texnologiya
+            sahəsində ən aktual kurslar, təlimlər və tədbirlər.
+        </p>
+        <a href="#ads" class="main-btn">Elanları kəşf et →</a>
+    </div>
+
+    <div class="hero-art">
+        <div class="code-icon">&lt;/&gt;</div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <span class="floating f1">AI</span>
+        <span class="floating f2">01</span>
+        <span class="floating f3">✦</span>
+    </div>
+</section>
+
+<section class="categories" id="courses">
+    <h2>Nə axtarırsan?</h2>
+    <div class="category-grid">
+        <a href="#ads" class="category">
+            <span>💻</span>
+            <h3>Kurslar</h3>
+            <p>Yeni biliklər qazan</p>
+        </a>
+        <a href="#ads" class="category">
+            <span>🎓</span>
+            <h3>Təlimlər</h3>
+            <p>Praktiki bacarıqlar öyrən</p>
+        </a>
+        <a href="#ads" class="category">
+            <span>🤖</span>
+            <h3>AI və texnologiya</h3>
+            <p>Gələcəyi kəşf et</p>
+        </a>
+        <a href="#ads" class="category">
+            <span>🚀</span>
+            <h3>Tədbirlər</h3>
+            <p>Fürsətləri qaçırma</p>
+        </a>
+    </div>
+</section>
+
+<section class="announcements" id="ads">
+    <div class="section-heading">
+        <div>
+            <span class="tag">CODESTEPJET ELANLARI</span>
+            <h2>Ən son elanlar</h2>
+        </div>
+        <a href="https://t.me/codestepjet" class="all-link">
+            Telegram kanalımız ↗
+        </a>
+    </div>
+
+    <div class="filters">
+        <button class="filter active" data-filter="all">Hamısı</button>
+        <button class="filter" data-filter="kurs">Kurslar</button>
+        <button class="filter" data-filter="telim">Təlimlər</button>
+        <button class="filter" data-filter="tedbir">Tədbirlər</button>
+    </div>
+
+    <div class="ads-grid" id="adsGrid">
+        <div class="empty-state">
+            <span>📡</span>
+            <h3>Elanlar hazırlanır</h3>
+            <p>Aktual elanlar burada görünəcək.</p>
+            <a href="https://t.me/codestepjet">Telegram kanalına keç →</a>
+        </div>
+    </div>
+</section>
+
+<section class="promo" id="trainings">
+    <div>
+        <span class="tag">SƏN DƏ FÜRSƏT YARAT</span>
+        <h2>Elanını CodeStepJet-də paylaş!</h2>
+        <p>IT kursunu, təlimini və tədbirini daha çox insana çatdır.</p>
+        <a href="https://t.me/elan_yerlesdirme_bot" class="main-btn">
+            Elan yerləşdir →
+        </a>
+    </div>
+    <div class="promo-icon">🚀</div>
+</section>
+</main>
+
+<footer id="events">
+    <a href="#" class="logo">CodeStep<span>Jet</span></a>
+    <p>Texnologiyaya doğru hər addım dəyərlidir.</p>
+    <a href="https://t.me/codestepjet">Telegram kanalımız ↗</a>
+    <p class="copyright">© 2026 CodeStepJet. Bütün hüquqlar qorunur.</p>
+</footer>
+
+<script>
+const filters = document.querySelectorAll(".filter");
+
+filters.forEach(button => {
+    button.addEventListener("click", () => {
+        filters.forEach(item => item.classList.remove("active"));
+        button.classList.add("active");
+    });
+});
+</script>
+
+</body>
+</html>
